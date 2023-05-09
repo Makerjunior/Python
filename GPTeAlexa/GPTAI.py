@@ -3,7 +3,7 @@
 
 import tika
 from tika import parser
-import openai
+import openai 
 
 openai.api_key = "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"
 
