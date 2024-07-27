@@ -1,23 +1,23 @@
-a = ['texto', (1,2), [2,3], 1, 2, 2, 4]
+a = ['texto', (1, 2), [2, 3], 1, 2, 2, 4]
 
 a.append(4)
-
-print a
+print(a)
 
 a[2] = 'Texto'
+print(a[1])
 
-print a[1]
+print(a.count((1, 2)))
 
-print a.count((1,2))
-
-
-print a.index(4)
+print(a.index(4))
 
 a.insert(0, 5)
-print a
+print(a)
 
 a.reverse()
-print a
+print(a)
 
-a.sort()
-print a
+# Separar os elementos por tipo
+numbers = [x for x in a if isinstance(x, int)]
+strings = [x for x in a if isinstance(x, str)]
+
+# Ordenar cada

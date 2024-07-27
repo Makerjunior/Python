@@ -1,18 +1,19 @@
+# Exemplo 1
 try:
     pass
-    except Exception, e:
-        raise
-    else: # Else means no exception
-        pass
-    finally: # It will always execute
-        pass
+except Exception as e:
+    raise
+else:  # Executado se não houver exceção
+    pass
+finally:  # Executado sempre
+    pass
 
-# Python 3
-    try:
+# Exemplo 2
+try:
     1/0
-    except (Exception, ZeroDivisionError) as e:
+except (Exception, ZeroDivisionError) as e:
     print(e)
-    else:
+else:
     print('No exception')
-    finally:
+finally:
     print('Finally')
